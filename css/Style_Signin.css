@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+box-sizing: border-box;
+
+}
+body{
+    overflow: hidden;
+    background-image: linear-gradient(to right , snow,rgb(236, 231, 231));
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.vid{
+    display: none;
+}
+.img{
+    width: 50%;
+    height: 100vh;
+    margin-left: -100%;
+
+}
+.img img{
+    width: 100%;
+    height: 100vh;
+}
+.allinfo{
+    text-align: center;
+    margin-top: 10%;
+
+}
+.allinfo h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.allinfo h5{
+padding-top: 3%;
+font-size: 17px;
+font-weight: 550;
+}
+.allinfo p{
+    color: rgba(74, 73, 73, 0.79);
+    padding-top: 1%;
+    width:80%;
+    text-align: left;
+    margin-left: 17%;
+}
+.form{
+    margin-top: 10%;
+    display: block;
+    width: 100%;
+}
+.form input{
+    display: block;
+    text-align: left;
+    margin-left: 40%;
+    margin-top: -4%;
+    font-size: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    color: rgb(7, 7, 7);
+    min-width: 40%;
+    border-radius: 5px;
+    border: none ;
+    background-color: rgb(201, 199, 199);
+}
+.form label{
+    display: flex;
+    margin-top: 5%;
+    padding-bottom: 0.7%;
+    padding-left: 20%;
+    font-size: 13px;
+    font-weight: 600;
+}
+.form button{
+margin-top: 12%;
+width: 40%;
+border: none;
+background-image: linear-gradient(to bottom right,#333333,#000000);
+padding: 1%;
+border-radius: 5px;
+color: snow;
+font-weight: 550;
+margin-left: 0%;
+cursor: pointer;
+transition: 0.7s ease;
+
+}
+.form button:hover{
+transform: scale(1.1);
+opacity: 0.7;
+transition: 0.7s ease;
+}
+
+@media (min-width:1629px) {
+    .form input{
+        padding: 10px;
+        font-size: 15px;
+        width: 40%;
+    }
+    .form label{
+        padding-bottom: 0%;
+
+    }
+    .allinfo h1{
+        font-size: 40px;
+    }
+    .form button{
+        width: 50%;
+        padding: 15px;
+        margin-left: 0%;
+    }
+.allinfo{
+    margin-left: 5%;
+}
+.img {
+    width: 45%;
+}
+    
+}
+
+
+
+@media (max-width:1000px) {
+    .img{
+display: none;    
+    }
+    .allinfo p{
+        padding-top: 5%;
+        width:90%;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .form input{
+    display: block;
+    text-align: left;
+    margin-left: 35%;
+    margin-top: -5%;
+    font-size: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    color: rgb(7, 7, 7);
+    min-width: 50%;
+    border-radius: 5px;
+    border: none ;
+    background-color: rgb(201, 199, 199);
+}
+.form label{
+    display: flex;
+    margin-top: 6%;
+    padding-left: 10%;
+    font-size: 12px;
+    font-weight: 600;
+}
+.form button{
+margin-top: 20%;
+width: 50%;
+border: none;
+background-image: linear-gradient(to bottom right,#333333,#000000);
+padding: 2%;
+border-radius: 5px;
+color: snow;
+font-weight: 550;
+margin-left: 0%;
+cursor: pointer;
+transition: 0.7s ease;
+
+}
+.vid{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    display: block;
+}
+
+    
+}
